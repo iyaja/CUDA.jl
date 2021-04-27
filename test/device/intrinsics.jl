@@ -1035,7 +1035,7 @@ end
 @testset "atomics (high-level)" begin
 
 @testset "add" begin
-    types = [Int32, Int64, UInt32, UInt64, Float32, Float16]
+    types = [Int32, Int64, UInt32, UInt64, Float32]
     capability(device()) >= v"6.0" && push!(types, Float64)
     capability(device()) >= v"7.0" && push!(types, Float16)
 
